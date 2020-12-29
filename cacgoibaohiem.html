@@ -4,18 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | DataTables</title>
+    <title>Các gói bảo hiểm</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
     <!-- DataTables -->
-    <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-    <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -28,7 +28,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../../index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -59,7 +59,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
@@ -75,7 +75,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         John Pierce
@@ -91,7 +91,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Nora Silvester
@@ -150,142 +150,18 @@
 
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
-            <!-- Brand Logo -->
-            <a href="../../index.html" class="brand-link">
+            <a href="login.html" class="brand-link" id="logout">
                 <img src="https://png.pngtree.com/png-vector/20190918/ourlarge/pngtree-beautiful-power-button-vector-line-icon-png-image_1741982.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Thoát</span>
             </a>
-
             <!-- Sidebar -->
             <div class="sidebar">
-                <!-- Sidebar user (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
-                    </div>
+                <div id="navBar">
+                    <script src="plugins/jquery/jquery.min.js"></script>
+                    <script>
+                        $("#navBar").load("navBar.html");
+                    </script>
                 </div>
-
-                <!-- SidebarSearch Form -->
-                <div class="form-inline">
-                    <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-                        </div>
-                    </div>
-                    <div class="sidebar-search-results">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item">
-                                <div class="search-title">
-                                    <b class="text-light"></b>N<b class="text-light"></b>o<b class="text-light"></b> <b class="text-light"></b>e<b class="text-light"></b>l<b class="text-light"></b>e<b class="text-light"></b>m<b class="text-light"></b>e
-                                    <b class="text-light"></b>n<b class="text-light"></b>t<b class="text-light"></b> <b class="text-light"></b>f<b class="text-light"></b>o<b class="text-light"></b>u<b class="text-light"></b>n<b class="text-light"></b>d
-                                    <b class="text-light"></b>!
-                                    <b class="text-light"></b>
-                                </div>
-                                <div class="search-path">
-
-                                </div>
-                            </a>
-                            <a href="#" class="list-group-item">
-                                <div class="search-title">
-                                    <b class="text-light"></b>N<b class="text-light"></b>o<b class="text-light"></b> <b class="text-light"></b>e<b class="text-light"></b>l<b class="text-light"></b>e<b class="text-light"></b>m<b class="text-light"></b>e
-                                    <b class="text-light"></b>n<b class="text-light"></b>t<b class="text-light"></b> <b class="text-light"></b>f<b class="text-light"></b>o<b class="text-light"></b>u<b class="text-light"></b>n<b class="text-light"></b>d
-                                    <b class="text-light"></b>!
-                                    <b class="text-light"></b>
-                                </div>
-                                <div class="search-path">
-
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
-                        <li class="nav-item menu-open">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>Tổng Quan
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="data.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Danh Sách Hợp Đồng</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="danhsachkhachhang.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Danh Sách Khách Hàng</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="khachhangtiemnang.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Danh Sách Khách Hàng Tiềm Năng</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="hopdong.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Hợp Đồng Của Bạn</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../pages/charts/thunhap.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Thu Nhập</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="hopthu.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Hộp Thư</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="congtacvien.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Danh Sách Cộng Tác Viên</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="giaochuyennguoi.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Hợp Đồng Giao Chuyển Người</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Các Gói Bảo Hiểm</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Xét Duyệt Hồ Sơ</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Hợp Đồng TVV</p>
-                            </a>
-                        </li>
-
-                    </ul>
-                </nav>
             </div>
         </aside>
 
@@ -296,10 +172,8 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>DANH SÁCH HỢP ĐỒNG</h1>
-                            <button type="button" class="btn btn-block btn-success btn-lg" data-toggle="modal" data-target="#myModal" style="width: 210px;">THÊM HỢP ĐỒNG</button>
+                            <h1>CÁC GÓI BẢO HIỂM</h1>
                         </div>
-
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -325,49 +199,64 @@
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Mã Hợp Đồng</th>
-                                                <th>Mã Khách Hàng</th>
-                                                <th>Chủ Hợp Đồng</th>
-                                                <th>Kỳ Hạn</th>
-                                                <th>Loại Bảo Hiểm</th>
-                                                <th>Mã Chiến Dịch</th>
-                                                <th>Tổng Số Tiền</th>
-                                                <th>Tổng Tiền Đã Trả</th>
-                                                <th>Ngày Đăng Ký</th>
-                                                <th>Ngày Hết Hạn</th>
+                                                <th>Mã Gói Bảo Hiểm</th>
+                                                <th>Tên Gói Bảo Hiểm</th>
+                                                <th>Tên Loại Hình Bảo Hiểm</th>
+                                                <th>Tổng Số Hợp Đồng</th>
+                                                <th>Số Hợp Đồng Đã Ký</th>
                                                 <th>Chi Tiết</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>#JHBVJHJHV798</td>
-                                                <td>#1000</td>
-                                                <td>Nguyễn Văn A</td>
-                                                <td>25 Năm</td>
                                                 <td>Bảo Hiểm Nhân Thọ</td>
-                                                <td>#KUHN1</td>
-                                                <td>440.000.000 VNĐ</td>
-                                                <td>60.000.000 VNĐ</td>
-                                                <td>20-11-2020</td>
-                                                <td>20-11-2046</td>
+                                                <td>Bảo Hiểm Hỗn Hợp</td>
+                                                <td>200</td>
+                                                <td>176</td>
                                                 <td><a href="#">Chi Tiết</a></td>
                                             </tr>
                                         </tbody>
-                                        <tfoot>
+                                        <tbody>
                                             <tr>
-                                                <th>Mã Hợp Đồng</th>
-                                                <th>Mã Khách Hàng</th>
-                                                <th>Chủ Hợp Đồng</th>
-                                                <th>Kỳ Hạn</th>
-                                                <th>Loại Bảo Hiểm</th>
-                                                <th>Mã Chiến Dịch</th>
-                                                <th>Tổng Số Tiền</th>
-                                                <th>Tổng Tiền Đã Trả</th>
-                                                <th>Ngày Đăng Ký</th>
-                                                <th>Ngày Ngày Hết Hạn</th>
-                                                <th>Chi Tiết</th>
+                                                <td>#JHBVJHJHV799</td>
+                                                <td>Bảo Hiểm Nhân Thọ</td>
+                                                <td>Bảo Hiểm Tử Kỳ</td>
+                                                <td>134</td>
+                                                <td>129</td>
+                                                <td><a href="#">Chi Tiết</a></td>
                                             </tr>
-                                        </tfoot>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>#JHBVJHJHV800</td>
+                                                <td>Bảo Hiểm Nhân Thọ</td>
+                                                <td>Bảo Hiểm Hưu Trí</td>
+                                                <td>314</td>
+                                                <td>310</td>
+                                                <td><a href="#">Chi Tiết</a></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>#JHBVJHJHV801</td>
+                                                <td>Bảo Hiểm Phi Nhân Thọ</td>
+                                                <td>Bảo Hiểm Tài Sản Và Thiệt Hại</td>
+                                                <td>332</td>
+                                                <td>312</td>
+                                                <td><a href="#">Chi Tiết</a></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>#JHBVJHJHV802</td>
+                                                <td>Bảo Hiểm Phi Nhân Thọ</td>
+                                                <td>Bảo Hiểm Xe Cơ Giới</td>
+                                                <td>534</td>
+                                                <td>432</td>
+                                                <td><a href="#">Chi Tiết</a></td>
+                                            </tr>
+                                        </tbody>
                                     </table>
                                 </div>
                                 <!-- /.card-body -->
@@ -464,27 +353,25 @@
     </div>
     <!-- ./wrapper -->
 
-    <!-- jQuery -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- DataTables  & Plugins -->
-    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-    <script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-    <script src="../../plugins/jszip/jszip.min.js"></script>
-    <script src="../../plugins/pdfmake/pdfmake.min.js"></script>
-    <script src="../../plugins/pdfmake/vfs_fonts.js"></script>
-    <script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-    <script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
-    <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="plugins/jszip/jszip.min.js"></script>
+    <script src="plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="../../dist/js/adminlte.min.js"></script>
+    <script src="dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
+    <script src="dist/js/demo.js"></script>
     <!-- Page specific script -->
     <script>
         $(function() {

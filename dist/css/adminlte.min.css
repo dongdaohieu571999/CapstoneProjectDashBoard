@@ -11853,7 +11853,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
     width: fit-content;
     height: inherit;
     min-height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0
 }
 
