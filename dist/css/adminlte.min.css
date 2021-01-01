@@ -11735,7 +11735,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
     body:not(.sidebar-mini-md) .main-footer,
     body:not(.sidebar-mini-md) .main-header {
         transition: margin-left .3s ease-in-out;
-        margin-left: 310px
+        margin-left: 250px;
     }
 }
 
@@ -11850,7 +11850,6 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 :not(.layout-fixed) .main-sidebar {
-    width: fit-content;
     height: inherit;
     min-height: 100%;
     position: fixed;
