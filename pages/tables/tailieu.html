@@ -327,19 +327,19 @@
                                 <div class="card-body">
                                     <ul style="list-style: none; padding: 10px;">
                                         <li style="padding: 10px;"><i class="fas fa-file-download" style="margin-right: 10px;"></i>
-                                            <a href="bang-khai-bao-thong-tin-chinh-khach.pdf">Bảng khai báo Thông tin Chính khách</a>
+                                            <a href="" onclick="popitup('bang-khai-bao-thong-tin-chinh-khach.pdf')">Bảng khai báo Thông tin Chính khách</a>
                                         </li>
                                         <li style="padding: 10px;"><i class="fas fa-file-download" style="margin-right: 10px;"></i>
-                                            <a href="bang-khai-bao-thong-tin-ve-ben-thu-ba.pdf">Bảng khai báo Thông tin về Bên thứ ba</a>
+                                            <a href="" onclick="popitup('bang-khai-bao-thong-tin-ve-ben-thu-ba.pdf')">Bảng khai báo Thông tin về Bên thứ ba</a>
                                         </li>
                                         <li style="padding: 10px;"><i class="fas fa-file-download" style="margin-right: 10px;"></i>
-                                            <a href="don-yeu-cau-bao-hiem-20122018.pdf">Đơn yêu cầu bảo hiểm</a>
+                                            <a href="" onclick="popitup('don-yeu-cau-bao-hiem-20122018.pdf')">Đơn yêu cầu bảo hiểm</a>
                                         </li>
                                         <li style="padding: 10px;"><i class="fas fa-file-download" style="margin-right: 10px;"></i>
-                                            <a href="don-yeu-cau-thay-doi-thong-tin-hdbh.pdf">Đơn yêu cầu thay đổi thông tin Hợp đồng bảo hiểm</a>
+                                            <a href="" onclick="popitup('don-yeu-cau-thay-doi-thong-tin-hdbh.pdf')">Đơn yêu cầu thay đổi thông tin Hợp đồng bảo hiểm</a>
                                         </li>
                                         <li style="padding: 10px;"><i class="fas fa-file-download" style="margin-right: 10px;"></i>
-                                            <a href="thong-bao-mat-bo-hop-dong-bao-hiem.pdf">Thông báo mất bộ hợp đồng bảo hiểm</a>
+                                            <a href="" onclick="popitup('thong-bao-mat-bo-hop-dong-bao-hiem.pdf')">Thông báo mất bộ hợp đồng bảo hiểm</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -477,6 +477,16 @@
                 "responsive": true,
             });
         });
+
+        // function popupPDF(path){
+        //     window.open(path, "width=500,height=500,top=100,left=500");
+        // }
+
+        function popitup(url) {
+       newwindow=window.open(url, 'Template','height=800,width=800');
+       if (window.focus) {newwindow.focus()}
+       return false;
+     }
     </script>
 </body>
 
