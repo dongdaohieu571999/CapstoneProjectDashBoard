@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | DataTables</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="plugins/chart.js/morris.js/morris.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- SEARCH FORM -->
+            <form class="form-inline ml-3">
+                <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Messages Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-comments"></i>
+                        <span class="badge badge-danger navbar-badge">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Brad Diesel
+                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">Call me whenever you can...</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        John Pierce
+                                        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">I got your message bro</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Nora Silvester
+                                        <span class="float-right text-sm text-warning"><i
+                                                class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">The subject goes here</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+                    </div>
+                </li>
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> 4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> 8 friend requests
+                            <span class="float-right text-muted text-sm">12 hours</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-file mr-2"></i> 3 new reports
+                            <span class="float-right text-muted text-sm">2 days</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                        <i class="fas fa-th-large"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <a href="login.html" class="brand-link" id="logout">
+                <img src="https://png.pngtree.com/png-vector/20190918/ourlarge/pngtree-beautiful-power-button-vector-line-icon-png-image_1741982.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">Thoát</span>
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div id="navBar">
+                    <script src="plugins/jquery/jquery.min.js"></script>
+                    <script>
+                        $("#navBar").load("navBar.html");
+                    </script>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+
+
+
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </section>
+
+            <!-- Main content -->
+            <div class="col-12">
+                <section class="content">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- AREA CHART -->
+                            <div class="box box-primary" style="display: none;">
+                                <div class="box-body chart-responsive">
+                                    <div class="chart" id="revenue-chart" style="height: 300px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+
+
+
+                        </div>
+                        <!-- /.col (LEFT) -->
+                        <div class="col-md-12">
+                            <!-- LINE CHART -->
+                            <div class="box box-info">
+
+                                <div class="box-body chart-responsive">
+                                    <div class="chart" id="line-chart" style="height: 300px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="300" version="1.1" width="594" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.6px; top: -0.4px;">
+                                            <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with
+                                                Raphaël 2.3.0</desc>
+                                            <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text
+                                                x="49.21875" y="261.375" text-anchor="end" font-family="sans-serif"
+                                                font-size="12px" stroke="none" fill="#888888"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                                font-weight="normal">
+                                                <tspan dy="4.3984375"
+                                                    style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan>
+                                            </text>
+                                            <path fill="none" stroke="#aaaaaa" d="M61.71875,261.375H569.6"
+                                                stroke-width="0.5"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text
+                                                x="49.21875" y="202.28125" text-anchor="end" font-family="sans-serif"
+                                                font-size="12px" stroke="none" fill="#888888"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                                font-weight="normal">
+                                                <tspan dy="4.3984375"
+                                                    style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">5,000</tspan>
+                                            </text>
+                                            <path fill="none" stroke="#aaaaaa" d="M61.71875,202.28125H569.6"
+                                                stroke-width="0.5"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text
+                                                x="49.21875" y="143.1875" text-anchor="end" font-family="sans-serif"
+                                                font-size="12px" stroke="none" fill="#888888"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                                font-weight="normal">
+                                                <tspan dy="4.3984375"
+                                                    style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">10,000
+                                                </tspan>
+                                            </text>
+                                            <path fill="none" stroke="#aaaaaa" d="M61.71875,143.1875H569.6"
+                                                stroke-width="0.5"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text
+                                                x="49.21875" y="84.09375" text-anchor="end" font-family="sans-serif"
+                                                font-size="12px" stroke="none" fill="#888888"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                                font-weight="normal">
+                                                <tspan dy="4.3984375"
+                                                    style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15,000
+                                                </tspan>
+                                            </text>
+                                            <path fill="none" stroke="#aaaaaa" d="M61.71875,84.09375H569.6"
+                                                stroke-width="0.5"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text
+                                                x="49.21875" y="25" text-anchor="end" font-family="sans-serif"
+                                                font-size="12px" stroke="none" fill="#888888"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                                font-weight="normal">
+                                                <tspan dy="4.3984375"
+                                                    style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">20,000
+                                                </tspan>
+                                            </text>
+                                            <path fill="none" stroke="#aaaaaa" d="M61.71875,25H569.6" stroke-width="0.5"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text
+                                                x="476.4164413730256" y="273.875" text-anchor="middle"
+                                                font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                                font-weight="normal" transform="matrix(1,0,0,1,0,6.8125)">
+                                                <tspan dy="4.3984375"
+                                                    style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2013</tspan>
+                                            </text><text x="250.55430589307414" y="273.875" text-anchor="middle"
+                                                font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                                                font-weight="normal" transform="matrix(1,0,0,1,0,6.8125)">
+                                                <tspan dy="4.3984375"
+                                                    style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan>
+                                            </text>
+                                            <path fill="none" stroke="#3c8dbc"
+                                                d="M61.71875,229.86621250000002C75.91227217496962,229.5352875,104.29931652490887,231.8606265625,118.49283869987849,228.5425125C132.6863608748481,225.22439843749999,161.07340522478736,204.79037708333334,175.26692739975698,203.3213C189.30617215978128,201.86819114583335,217.38466167982992,219.6577671875,231.42390643985422,216.85376875C245.46315119987852,214.04977031250002,273.5416407199271,183.68533489583336,287.5808854799514,180.88931250000002C301.77440765492105,178.06256458333334,330.1614520048603,191.42277343749998,344.3549741798299,194.3626875C358.54849635479957,197.3026015625,386.9355407047388,218.37599791666668,401.12906287970844,204.408625C415.16830763973275,190.59307135416668,443.24679715978135,91.94644419026244,457.28604191980565,83.23098125000001C471.1710092648846,74.61129262776245,498.9409439550426,125.36479253090661,512.8259113001216,135.06801875000002C527.0194334750912,144.9868722184066,555.4064778250304,155.0564796875,569.6,161.7193"
+                                                stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                            </path>
+                                            <circle cx="61.71875" cy="229.86621250000002" r="4" fill="#3c8dbc"
+                                                stroke="#ffffff" stroke-width="1"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="118.49283869987849" cy="228.5425125" r="4" fill="#3c8dbc"
+                                                stroke="#ffffff" stroke-width="1"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="175.26692739975698" cy="203.3213" r="4" fill="#3c8dbc"
+                                                stroke="#ffffff" stroke-width="1"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="231.42390643985422" cy="216.85376875" r="4" fill="#3c8dbc"
+                                                stroke="#ffffff" stroke-width="1"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="287.5808854799514" cy="180.88931250000002" r="4" fill="#3c8dbc"
+                                                stroke="#ffffff" stroke-width="1"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="344.3549741798299" cy="194.3626875" r="4" fill="#3c8dbc"
+                                                stroke="#ffffff" stroke-width="1"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="401.12906287970844" cy="204.408625" r="4" fill="#3c8dbc"
+                                                stroke="#ffffff" stroke-width="1"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="457.28604191980565" cy="83.23098125000001" r="4" fill="#3c8dbc"
+                                                stroke="#ffffff" stroke-width="1"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="512.8259113001216" cy="135.06801875000002" r="4" fill="#3c8dbc"
+                                                stroke="#ffffff" stroke-width="1"
+                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                                            <circle cx="569.6" cy="161.7193" r="4" fill="#3c8dbc" stroke="#ffffff"
+                                                stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                            </circle>
+                                        </svg>
+                                        <div class="morris-hover morris-default-style" style="left: 18.6938px; top: 163px; display: none;">
+                                            <div class="morris-hover-row-label">2011 Q1</div>
+                                            <div class="morris-hover-point" style="color: #3c8dbc">
+                                                Item 1: 2,666
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+
+
+                        </div>
+                        <!-- /.col (RIGHT) -->
+                    </div>
+                    <!-- /.row -->
+
+                </section>
+            </div>
+            <div class="content col-12">
+                <table class=" table table-bordered ">
+                    <thead>
+                        <tr>
+                            <th>Tiêu Đề</th>
+                            <th>Thông tin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mã Hợp Đồng</td>
+                            <td>#JHBVJHJHV798</td>
+                        </tr>
+                        <tr>
+                            <td>Người Thu Hợp Đồng</td>
+                            <td>Trần Thị Ngọc Ánh</td>
+                        </tr>
+                        <tr>
+                            <td>Chủ Hợp Đồng</td>
+                            <td>Nguyễn Văn A</td>
+                        </tr>
+                        <tr>
+                            <td>Kỳ Hạn</td>
+                            <td>25 năm</td>
+                        </tr>
+                        <tr>
+                            <td>Loại Bảo hiểm</td>
+                            <td>Nhân Thọ</td>
+                        </tr>
+                        <tr>
+                            <td>Tổng tiền</td>
+                            <td>15.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>Ngày đăng ký</td>
+                            <td>20-11-2020</td>
+                        </tr>
+                        <tr>
+                            <td>Mã Khách Hàng</td>
+                            <td>#1000</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="row">
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger">Tạm
+                        Ngưng</button>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Sửa
+                        Đổi</button>
+                </div>
+            </div>
+            <!-- /.content -->
+            <!-- model sua doi-->
+            <div class="modal fade show" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="card card-primary">
+
+                                <form>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Mã Hợp Đồng</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Mã Khách Hàng</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Tên Chủ Hợp Đồng</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Kỳ Hạn</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Loại Bảo Hiểm</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Tổng Số Tiền Phải Trả</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Tổng Số Tiền Đã Trả</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Ngày Đăng Ký</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Ngày Hết Hạn</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal modal-danger fade in" id="modal-danger">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                        </div>
+                        <div class="modal-body">
+                            <p>Gửi yêu cầu cho cấp trên để tạm ngưng hợp đồng này</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline">Gửi</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer ">
+            <div class="float-right d-none d-sm-block ">
+                <b>Version</b> 3.1.0-rc
+            </div>
+            <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io ">AdminLTE.io</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <!-- DataTables  & Plugins -->
+    <script src="plugins/datatables/jquery.dataTables.min.js "></script>
+    <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js "></script>
+    <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js "></script>
+    <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js "></script>
+    <script src="plugins/datatables-buttons/js/dataTables.buttons.min.js "></script>
+    <script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js "></script>
+    <script src="plugins/jszip/jszip.min.js "></script>
+    <script src="plugins/pdfmake/pdfmake.min.js "></script>
+    <script src="plugins/pdfmake/vfs_fonts.js "></script>
+    <script src="plugins/datatables-buttons/js/buttons.html5.min.js "></script>
+    <script src="plugins/datatables-buttons/js/buttons.print.min.js "></script>
+    <script src="plugins/datatables-buttons/js/buttons.colVis.min.js "></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js "></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js "></script>
+    <!-- Page specific script -->
+    <script src="plugins/raphael/raphael.min.js"></script>
+    <script src="plugins/chart.js/morris.js/morris.min.js"></script>
+    <script>
+        $(function() {
+            "use strict";
+
+
+            // LINE CHART
+            var line = new Morris.Line({
+                element: 'line-chart',
+                resize: true,
+                data: [{
+                    y: '2011 Q1',
+                    item1: 2666
+                }, {
+                    y: '2011 Q2',
+                    item1: 2778
+                }, {
+                    y: '2011 Q3',
+                    item1: 4912
+                }, {
+                    y: '2011 Q4',
+                    item1: 3767
+                }, {
+                    y: '2012 Q1',
+                    item1: 6810
+                }, {
+                    y: '2012 Q2',
+                    item1: 5670
+                }, {
+                    y: '2012 Q3',
+                    item1: 4820
+                }, {
+                    y: '2012 Q4',
+                    item1: 15073
+                }, {
+                    y: '2013 Q1',
+                    item1: 10687
+                }, {
+                    y: '2013 Q2',
+                    item1: 8432
+                }],
+                xkey: 'y',
+                ykeys: ['item1'],
+                labels: ['Item 1'],
+                lineColors: ['#3c8dbc'],
+                hideHover: 'auto'
+            });
+
+
+
+        });
+    </script>
+
+</body>
+
+</html>
