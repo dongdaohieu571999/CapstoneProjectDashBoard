@@ -28,7 +28,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../../index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -150,12 +150,10 @@
 
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
-            <!-- Brand Logo -->
-            <a href="../../index.html" class="brand-link">
+            <a href="login.html" class="brand-link" id="logout">
                 <img src="https://png.pngtree.com/png-vector/20190918/ourlarge/pngtree-beautiful-power-button-vector-line-icon-png-image_1741982.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Thoát</span>
             </a>
-
             <!-- Sidebar -->
             <div class="sidebar">
                 <div id="navBar">
@@ -174,7 +172,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>CÁC GÓI BẢO HIỂM</h1>
+                            <h1>BIỂU MẪU THƯỜNG DÙNG</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -194,72 +192,27 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h3 class="card-title">DataTable with default features</h3>
+                                    <h3 class="card-title"></h3>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <table id="example1" class="table table-bordered table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Mã Gói Bảo Hiểm</th>
-                                                <th>Tên Gói Bảo Hiểm</th>
-                                                <th>Tên Loại Hình Bảo Hiểm</th>
-                                                <th>Tổng Số Hợp Đồng</th>
-                                                <th>Số Hợp Đồng Đã Ký</th>
-                                                <th>Chi Tiết</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>#JHBVJHJHV798</td>
-                                                <td>Bảo Hiểm Nhân Thọ</td>
-                                                <td>Bảo Hiểm Hỗn Hợp</td>
-                                                <td>200</td>
-                                                <td>176</td>
-                                                <td><a href="cacgoibaohiem_chitiet.html">Chi Tiết</a></td>
-                                            </tr>
-                                        </tbody>
-                                        <tbody>
-                                            <tr>
-                                                <td>#JHBVJHJHV799</td>
-                                                <td>Bảo Hiểm Nhân Thọ</td>
-                                                <td>Bảo Hiểm Tử Kỳ</td>
-                                                <td>134</td>
-                                                <td>129</td>
-                                                <td><a href="#">Chi Tiết</a></td>
-                                            </tr>
-                                        </tbody>
-                                        <tbody>
-                                            <tr>
-                                                <td>#JHBVJHJHV800</td>
-                                                <td>Bảo Hiểm Nhân Thọ</td>
-                                                <td>Bảo Hiểm Hưu Trí</td>
-                                                <td>314</td>
-                                                <td>310</td>
-                                                <td><a href="#">Chi Tiết</a></td>
-                                            </tr>
-                                        </tbody>
-                                        <tbody>
-                                            <tr>
-                                                <td>#JHBVJHJHV801</td>
-                                                <td>Bảo Hiểm Phi Nhân Thọ</td>
-                                                <td>Bảo Hiểm Tài Sản Và Thiệt Hại</td>
-                                                <td>332</td>
-                                                <td>312</td>
-                                                <td><a href="#">Chi Tiết</a></td>
-                                            </tr>
-                                        </tbody>
-                                        <tbody>
-                                            <tr>
-                                                <td>#JHBVJHJHV802</td>
-                                                <td>Bảo Hiểm Phi Nhân Thọ</td>
-                                                <td>Bảo Hiểm Xe Cơ Giới</td>
-                                                <td>534</td>
-                                                <td>432</td>
-                                                <td><a href="#">Chi Tiết</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <ul style="list-style: none; padding: 10px;">
+                                        <li style="padding: 10px;"><i class="fas fa-file-download" style="margin-right: 10px;"></i>
+                                            <a href="" data-toggle="modal" data-target="#myModal">Bảng khai báo Thông tin Chính khách</a>
+                                        </li>
+                                        <li style="padding: 10px;"><i class="fas fa-file-download" style="margin-right: 10px;"></i>
+                                            <a href="" onclick="popitup('bang-khai-bao-thong-tin-ve-ben-thu-ba.pdf')">Bảng khai báo Thông tin về Bên thứ ba</a>
+                                        </li>
+                                        <li style="padding: 10px;"><i class="fas fa-file-download" style="margin-right: 10px;"></i>
+                                            <a href="" onclick="popitup('don-yeu-cau-bao-hiem-20122018.pdf')">Đơn yêu cầu bảo hiểm</a>
+                                        </li>
+                                        <li style="padding: 10px;"><i class="fas fa-file-download" style="margin-right: 10px;"></i>
+                                            <a href="" onclick="popitup('don-yeu-cau-thay-doi-thong-tin-hdbh.pdf')">Đơn yêu cầu thay đổi thông tin Hợp đồng bảo hiểm</a>
+                                        </li>
+                                        <li style="padding: 10px;"><i class="fas fa-file-download" style="margin-right: 10px;"></i>
+                                            <a href="" onclick="popitup('thong-bao-mat-bo-hop-dong-bao-hiem.pdf')">Thông báo mất bộ hợp đồng bảo hiểm</a>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <!-- /.card-body -->
                             </div>
@@ -279,60 +232,8 @@
                     <div class="modal-content">
                         <div class="modal-body">
                             <div class="card card-primary">
-                                <div class="card-header">
-                                    <h3 class="card-title">Quick Example</h3>
-                                </div>
-                                <!-- /.card-header -->
-                                <!-- form start -->
-                                <form>
-                                    <div class="card-body">
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Mã Hợp Đồng</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Mã Khách Hàng</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                        </div>
-
-
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Tên Chủ Hợp Đồng</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Kỳ Hạn</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Loại Bảo Hiểm</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Tổng Số Tiền Phải Trả</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Tổng Số Tiền Đã Trả</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Ngày Đăng Ký</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Ngày Hết Hạn</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                    </div>
-                                    <div class="card-footer">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                    </div>
-                                </form>
+                                <embed src="bang-khai-bao-thong-tin-ve-ben-thu-ba.pdf" frameborder="0" width="700px" height="650px">
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
 
