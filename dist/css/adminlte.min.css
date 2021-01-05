@@ -6369,7 +6369,7 @@ a.disabled.mailbox-attachment-close {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 100%;
+    width: fit-content;
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
@@ -6456,7 +6456,7 @@ a.disabled.mailbox-attachment-close {
 
 @media (min-width:576px) {
     .modal-dialog {
-        max-width: 500px;
+        max-width: fit-content;
         margin: 1.75rem auto
     }
     .modal-dialog-scrollable {
@@ -11735,7 +11735,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
     body:not(.sidebar-mini-md) .main-footer,
     body:not(.sidebar-mini-md) .main-header {
         transition: margin-left .3s ease-in-out;
-        margin-left: 310px
+        margin-left: 250px;
     }
 }
 
@@ -11850,10 +11850,9 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 :not(.layout-fixed) .main-sidebar {
-    width: fit-content;
     height: inherit;
     min-height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0
 }
 
@@ -11862,7 +11861,6 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 .layout-fixed .main-sidebar {
-    width: fit-content;
     bottom: 0;
     float: none;
     height: 100vh;

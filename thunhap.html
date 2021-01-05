@@ -9,9 +9,9 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -24,7 +24,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../../index3.html" class="nav-link">Home</a>
+                    <a href="index3.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
@@ -55,7 +55,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
@@ -71,7 +71,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         John Pierce
@@ -87,7 +87,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Nora Silvester
@@ -146,142 +146,18 @@
 
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
-            <!-- Brand Logo -->
-            <a href="../../index.html" class="brand-link">
+            <a href="login.html" class="brand-link" id="logout">
                 <img src="https://png.pngtree.com/png-vector/20190918/ourlarge/pngtree-beautiful-power-button-vector-line-icon-png-image_1741982.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Thoát</span>
             </a>
-
             <!-- Sidebar -->
             <div class="sidebar">
-                <!-- Sidebar user (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
-                    </div>
+                <div id="navBar">
+                    <script src="plugins/jquery/jquery.min.js"></script>
+                    <script>
+                        $("#navBar").load("navBar.html");
+                    </script>
                 </div>
-
-                <!-- SidebarSearch Form -->
-                <div class="form-inline">
-                    <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-                        </div>
-                    </div>
-                    <div class="sidebar-search-results">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item">
-                                <div class="search-title">
-                                    <b class="text-light"></b>N<b class="text-light"></b>o<b class="text-light"></b> <b class="text-light"></b>e<b class="text-light"></b>l<b class="text-light"></b>e<b class="text-light"></b>m<b class="text-light"></b>e
-                                    <b class="text-light"></b>n<b class="text-light"></b>t<b class="text-light"></b> <b class="text-light"></b>f<b class="text-light"></b>o<b class="text-light"></b>u<b class="text-light"></b>n<b class="text-light"></b>d
-                                    <b class="text-light"></b>!
-                                    <b class="text-light"></b>
-                                </div>
-                                <div class="search-path">
-
-                                </div>
-                            </a>
-                            <a href="#" class="list-group-item">
-                                <div class="search-title">
-                                    <b class="text-light"></b>N<b class="text-light"></b>o<b class="text-light"></b> <b class="text-light"></b>e<b class="text-light"></b>l<b class="text-light"></b>e<b class="text-light"></b>m<b class="text-light"></b>e
-                                    <b class="text-light"></b>n<b class="text-light"></b>t<b class="text-light"></b> <b class="text-light"></b>f<b class="text-light"></b>o<b class="text-light"></b>u<b class="text-light"></b>n<b class="text-light"></b>d
-                                    <b class="text-light"></b>!
-                                    <b class="text-light"></b>
-                                </div>
-                                <div class="search-path">
-
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
-                        <li class="nav-item menu-open">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>Tổng Quan
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../pages/tables/data.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Danh Sách Hợp Đồng</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../pages/tables/danhsachkhachhang.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Danh Sách Khách Hàng</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../pages/tables/khachhangtiemnang.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Danh Sách Khách Hàng Tiềm Năng</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../pages/tables/hopdong.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Hợp Đồng Của Bạn</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../pages/charts/thunhap.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Thu Nhập</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../pages/tables/hopthu.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Hộp Thư</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../pages/tables/congtacvien.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Danh Sách Cộng Tác Viên</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../pages/tables/giaochuyennguoi.html" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Hợp Đồng Giao Chuyển Người</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Các Gói Bảo Hiểm</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Xét Duyệt Hồ Sơ</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-table"></i>
-                                <p>Hợp Đồng TVV</p>
-                            </a>
-                        </li>
-
-                    </ul>
-                </nav>
             </div>
         </aside>
 
@@ -309,6 +185,34 @@
             <section class="content">
                 <div class="container-fluid">
                     <div class="row">
+                        <div class="col-lg-6 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-info">
+                                <div class="inner">
+                                    <h3>2.030 Tr</h3>
+
+                                    <p>Số Tiền Thu Được Gần Đây Nhất</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-person-add"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-warning">
+                                <div class="inner">
+                                    <h3>#1000</h3>
+
+                                    <p>Hợp Đồng Gần Đây Nhất</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-folder"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
                         <div>
                             <!-- AREA CHART -->
                             <div class="card card-primary" style="display: none;">
@@ -449,7 +353,7 @@
                             <div class="card bg-gradient-info">
                                 <div class="card-header border-0 ui-sortable-handle" style="cursor: move;">
                                     <h3 class="card-title">
-                                        <i class="fas fa-th mr-1"></i> Biểu Đồ Thu Nhập Qua Các Kênh Bán
+                                        <i class="fas fa-th mr-1"></i> Doanh Thu
                                     </h3>
 
                                     <div class="card-tools">
@@ -461,26 +365,37 @@
                   </button>
                                     </div>
                                 </div>
-                                <div class="card-body" style="display: block;"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                <div class="card-body" style="display: block;">
+                                    <div class="chartjs-size-monitor">
+                                        <div class="chartjs-size-monitor-expand">
+                                            <div class=""></div>
+                                        </div>
+                                        <div class="chartjs-size-monitor-shrink">
+                                            <div class=""></div>
+                                        </div>
+                                    </div>
                                     <canvas class="chart chartjs-render-monitor" id="line-chart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 278px;" width="556" height="500"></canvas>
                                 </div>
                                 <!-- /.card-body -->
                                 <div class="card-footer bg-transparent" style="display: block;">
                                     <div class="row">
                                         <div class="col-4 text-center">
-                                            <div style="display:inline;width:60px;height:60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; background: none; font: bold 12px Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; appearance: none;"></div>
+                                            <div style="display:inline;width:60px;height:60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly"
+                                                    style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; background: none; font: bold 12px Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; appearance: none;"></div>
 
                                             <div class="text-white">Qua Saler</div>
                                         </div>
                                         <!-- ./col -->
                                         <div class="col-4 text-center">
-                                            <div style="display:inline;width:60px;height:60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; background: none; font: bold 12px Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; appearance: none;"></div>
+                                            <div style="display:inline;width:60px;height:60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly"
+                                                    style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; background: none; font: bold 12px Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; appearance: none;"></div>
 
                                             <div class="text-white">Qua Ngân Hàng</div>
                                         </div>
                                         <!-- ./col -->
                                         <div class="col-4 text-center">
-                                            <div style="display:inline;width:60px;height:60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; background: none; font: bold 12px Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; appearance: none;"></div>
+                                            <div style="display:inline;width:60px;height:60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly"
+                                                    style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; background: none; font: bold 12px Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; appearance: none;"></div>
 
                                             <div class="text-white">Trực Tiếp Với Đại Lý</div>
                                         </div>
@@ -515,16 +430,14 @@
     </div>
     <!-- ./wrapper -->
 
-    <!-- jQuery -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- ChartJS -->
-    <script src="../../plugins/chart.js/Chart.min.js"></script>
+    <script src="plugins/chart.js/Chart.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="../../dist/js/adminlte.min.js"></script>
+    <script src="dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="../../dist/js/demo.js"></script>
+    <script src="dist/js/demo.js"></script>
     <!-- Page specific script -->
     <script>
         $(function() {
@@ -705,66 +618,64 @@
             })
 
             // Sales graph chart
-  var salesGraphChartCanvas = $('#line-chart').get(0).getContext('2d')
-  // $('#revenue-chart').get(0).getContext('2d');
+            var salesGraphChartCanvas = $('#line-chart').get(0).getContext('2d')
+                // $('#revenue-chart').get(0).getContext('2d');
 
-  var salesGraphChartData = {
-    labels: ['2011 Q1', '2011 Q2', '2011 Q3', '2011 Q4', '2012 Q1', '2012 Q2', '2012 Q3', '2012 Q4', '2013 Q1', '2013 Q2'],
-    datasets: [
-      {
-        label: 'Digital Goods',
-        fill: false,
-        borderWidth: 2,
-        lineTension: 0,
-        spanGaps: true,
-        borderColor: '#efefef',
-        pointRadius: 3,
-        pointHoverRadius: 7,
-        pointColor: '#efefef',
-        pointBackgroundColor: '#efefef',
-        data: [2666, 2778, 4912, 3767, 6810, 5670, 4820, 15073, 10687, 8432]
-      }
-    ]
-  }
+            var salesGraphChartData = {
+                labels: ['2011 Q1', '2011 Q2', '2011 Q3', '2011 Q4', '2012 Q1', '2012 Q2', '2012 Q3', '2012 Q4', '2013 Q1', '2013 Q2'],
+                datasets: [{
+                    label: 'Digital Goods',
+                    fill: false,
+                    borderWidth: 2,
+                    lineTension: 0,
+                    spanGaps: true,
+                    borderColor: '#efefef',
+                    pointRadius: 3,
+                    pointHoverRadius: 7,
+                    pointColor: '#efefef',
+                    pointBackgroundColor: '#efefef',
+                    data: [2666, 2778, 4912, 3767, 6810, 5670, 4820, 15073, 10687, 8432]
+                }]
+            }
 
-  var salesGraphChartOptions = {
-    maintainAspectRatio: false,
-    responsive: true,
-    legend: {
-      display: false
-    },
-    scales: {
-      xAxes: [{
-        ticks: {
-          fontColor: '#efefef'
-        },
-        gridLines: {
-          display: false,
-          color: '#efefef',
-          drawBorder: false
-        }
-      }],
-      yAxes: [{
-        ticks: {
-          stepSize: 5000,
-          fontColor: '#efefef'
-        },
-        gridLines: {
-          display: true,
-          color: '#efefef',
-          drawBorder: false
-        }
-      }]
-    }
-  }
+            var salesGraphChartOptions = {
+                maintainAspectRatio: false,
+                responsive: true,
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            fontColor: '#efefef'
+                        },
+                        gridLines: {
+                            display: false,
+                            color: '#efefef',
+                            drawBorder: false
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            stepSize: 5000,
+                            fontColor: '#efefef'
+                        },
+                        gridLines: {
+                            display: true,
+                            color: '#efefef',
+                            drawBorder: false
+                        }
+                    }]
+                }
+            }
 
-  // This will get the first returned node in the jQuery collection.
-  // eslint-disable-next-line no-unused-vars
-  var salesGraphChart = new Chart(salesGraphChartCanvas, {
-    type: 'line',
-    data: salesGraphChartData,
-    options: salesGraphChartOptions
-  })
+            // This will get the first returned node in the jQuery collection.
+            // eslint-disable-next-line no-unused-vars
+            var salesGraphChart = new Chart(salesGraphChartCanvas, {
+                type: 'line',
+                data: salesGraphChartData,
+                options: salesGraphChartOptions
+            })
         })
     </script>
 </body>
