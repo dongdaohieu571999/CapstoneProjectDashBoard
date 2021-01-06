@@ -206,6 +206,7 @@
                                                 <th>Chủ Hợp Đồng</th>
                                                 <th>Kỳ Hạn</th>
                                                 <th>Loại Bảo Hiểm</th>
+                                                <th>Mã Gói Bảo Hiểm</th>
                                                 <th>Mã Chiến Dịch</th>
                                                 <th>Tổng Số Tiền</th>
                                                 <th>Tổng Tiền Đã Trả</th>
@@ -214,6 +215,7 @@
                                                 <th>Ngày Đóng Tiền Kế Tiếp</th>
                                                 <td>TRạng Thái</td>
                                                 <th>Chi Tiết</th>
+                                                <th>View PDF</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -223,6 +225,7 @@
                                                 <td>Nguyễn Văn A</td>
                                                 <td>25 Năm</td>
                                                 <td>Bảo Hiểm Nhân Thọ</td>
+                                                <td>#1000</td>
                                                 <td>#KUHN1</td>
                                                 <td>440.000.000 VNĐ</td>
                                                 <td>60.000.000 VNĐ</td>
@@ -231,6 +234,7 @@
                                                 <td>20-11-2021</td>
                                                 <td>Pending</td>
                                                 <td><a href="detaildata.html">Chi Tiết</a></td>
+                                                <td><button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#viewPdf">View PDF</button></td>
                                             </tr>
                                         </tbody>
                                         <tfoot>
@@ -240,6 +244,7 @@
                                                 <th>Chủ Hợp Đồng</th>
                                                 <th>Kỳ Hạn</th>
                                                 <th>Loại Bảo Hiểm</th>
+                                                <th>Mã Gói Bảo Hiểm</th>
                                                 <th>Mã Chiến Dịch</th>
                                                 <th>Tổng Số Tiền</th>
                                                 <th>Tổng Tiền Đã Trả</th>
@@ -248,6 +253,7 @@
                                                 <th>Ngày Đóng Tiền Kế Tiếp</th>
                                                 <td>TRạng Thái</td>
                                                 <th>Chi Tiết</th>
+                                                <th>View PDF</th>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -272,7 +278,7 @@
                             <div class="card card-primary">
 
                                 <form>
-                                    <div class="card-body">
+                                    <div class="card-body" style="height: 448px; width: 1200px; overflow: auto;">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Mã Hợp Đồng</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
@@ -281,8 +287,6 @@
                                             <label for="exampleInputPassword1">Mã Khách Hàng</label>
                                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                         </div>
-
-
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Tên Chủ Hợp Đồng</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
@@ -293,6 +297,10 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Loại Bảo Hiểm</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Mã Bảng Minh Họa</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                                         </div>
                                         <div class="form-group">
@@ -313,6 +321,7 @@
                                         </div>
                                     </div>
                                     <div class="card-footer">
+                                        <button type="submit" class="btn btn-primary">Save Draft</button>
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
                                 </form>
@@ -322,7 +331,19 @@
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>
                     </div>
+                </div>
+            </div>
 
+
+            <div class="modal fade" id="viewPdf" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="card card-primary">
+                                <embed src="bang-khai-bao-thong-tin-ve-ben-thu-ba.pdf" frameborder="0" width="700px" height="650px">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
