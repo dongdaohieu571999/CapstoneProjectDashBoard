@@ -71,13 +71,7 @@
         <li class="nav-item" id="customerList">
             <a href="danhsachkhachhang.html" class="nav-link">
                 <i class="nav-icon fas fa-table"></i>
-                <p>Danh Sách Khách Hàng</p>
-            </a>
-        </li>
-        <li class="nav-item" id="potentialCustomerList">
-            <a href="khachhangtiemnang.html" class="nav-link">
-                <i class="nav-icon fas fa-table"></i>
-                <p>Danh Sách Khách Hàng Tiềm Năng</p>
+                <p>Danh Sách KHTN</p>
             </a>
         </li>
         <li class="nav-item" id="yourContract">
@@ -118,10 +112,10 @@
                 <p>Chứng Chỉ</p>
             </a>
         </li>
-        <li class="nav-item" id="listDraft">
-            <a href="danhsachbanminhhoa.html" class="nav-link">
-                <i class="nav-icon fa fa-graduation-cap"></i>
-                <p>Danh Sách Bản Minh Hoạ</p>
+        <li class="nav-item" id="notiAndChatbox">
+            <a href="notification.html" class="nav-link">
+                <i class="nav-icon fa fa-bell"></i>
+                <p>Thông Báo</p>
             </a>
         </li>
         <!-- saler -->
@@ -253,7 +247,6 @@
             $("#notiControl").hide();
             $("#contractControl").hide();
         } else if (localStorage.getItem("param") === "appraiser") {
-            $("#listDraft").hide();
             $("#overView").hide();
             $("#contractList").hide();
             $("#customerList").hide();
@@ -274,8 +267,8 @@
             $("#partner").hide();
             $("#notiControl").hide();
             $("#contractControl").hide();
+            $("#notiAndChatbox").hide();
         } else if (localStorage.getItem("param") === "admin") {
-            $("#listDraft").hide();
             $("#review").hide();
             $("#salerList").hide();
             $("#blackList").hide();
@@ -293,6 +286,7 @@
             $("#document").hide();
             $("#certificate").hide();
             $("#passchange").hide();
+            $("#notiAndChatbox").hide();
         }
     } else {
         localStorage.setItem("param", urlParams.get('x'));
@@ -315,7 +309,6 @@
             $("#notiControl").hide();
             $("#contractControl").hide();
         } else if (localStorage.getItem("param") === "appraiser") {
-            $("#listDraft").hide();
             $("#overView").hide();
             $("#contractList").hide();
             $("#customerList").hide();
@@ -337,8 +330,8 @@
             $("#partner").hide();
             $("#notiControl").hide();
             $("#contractControl").hide();
+            $("#notiAndChatbox").hide();
         } else if (localStorage.getItem("param") === "admin") {
-            $("#listDraft").hide();
             $("#review").hide();
             $("#salerList").hide();
             $("#blackList").hide();
@@ -356,6 +349,7 @@
             $("#passchange").hide();
             $("#document").hide();
             $("#certificate").hide();
+            $("#notiAndChatbox").hide();
         }
     }
 </script>

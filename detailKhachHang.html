@@ -171,132 +171,132 @@
             <section class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
-                        <h1>DANH SÁCH KHÁCH HÀNG</h1>
+
+
+
                     </div>
                 </div>
                 <!-- /.container-fluid -->
             </section>
 
             <!-- Main content -->
-            <div class="content">
+            <div class="content col-6" style="margin: 0 auto;">
+                <table class=" table table-bordered ">
+                    <thead>
+                        <tr>
+                            <th>Tiêu Đề</th>
+                            <th>Thông tin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mã Hợp Đồng</td>
+                            <td><a href="#">#JHBVJHJHV798</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mã Khách Hàng</td>
+                            <td>Trần Thị Ngọc Ánh</td>
+                        </tr>
+                        <tr>
+                            <td>Họ Và Tên</td>
+                            <td>Nguyễn Văn A</td>
+                        </tr>
+                        <tr>
+                            <td>Ngày Sinh</td>
+                            <td>25/10/2001</td>
+                        </tr>
+                        <tr>
+                            <td>Loại Bảo hiểm</td>
+                            <td>Nhân Thọ</td>
+                        </tr>
+                        <tr>
+                            <td>Địa Chỉ</td>
+                            <td>Hà Nội</td>
+                        </tr>
+                        <tr>
+                            <td>Mã Bản Minh Họa</td>
+                            <td><a href="#">#1000</a></td>
+                        </tr>
+                        <tr>
+                            <td>Số Điện Thoại</td>
+                            <td>12345678</td>
+                        </tr>
+                        <tr>
+                            <td>Trạng Thái</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>Nơi Làm Việc</td>
+                            <td>Hà Nội</td>
+                        </tr>
+                        <tr>
+                            <td>Ngày Đăng Ký</td>
+                            <td>20/10/2001</td>
+                        </tr>
 
-                <img src="https://gvlawyers.com.vn/wp-content/uploads/2020/05/hop-dong-khoan-viec.jpg" style=" width: 500px;
-    left: 30%;
-    position: relative;
-">
+
+                    </tbody>
+                </table>
+
+                <button type="button" class="btn btn-success">Chỉnh Sửa Thông Tin</button>
+                <button type="button" class="btn btn-success">Báo Cáo</button>
+                <button type="button" class="btn btn-success">Xóa Khách Hàng</button>
             </div>
             <!-- /.content -->
-            <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal modal-danger fade in" id="tamNgung">
                 <div class="modal-dialog">
-
-                    <!-- Modal content-->
                     <div class="modal-content">
-                        <div class="modal-body">
-                            <div class="card card-primary">
-                                <div class="card-header">
-                                    <h3 class="card-title">Quick Example</h3>
-                                </div>
-                                <!-- /.card-header -->
-                                <!-- form start -->
-                                <form>
-                                    <div class="card-body">
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Mã Hợp Đồng</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Mã Khách Hàng</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                        </div>
 
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+        </div>
 
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Tên Chủ Hợp Đồng</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Kỳ Hạn</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Loại Bảo Hiểm</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Tổng Số Tiền Phải Trả</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Tổng Số Tiền Đã Trả</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Ngày Đăng Ký</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Ngày Hết Hạn</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                        </div>
-                                    </div>
-                                    <div class="card-footer">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <div class="modal fade" id="viewPdf" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="card card-primary">
+                            <embed src="bang-khai-bao-thong-tin-ve-ben-thu-ba.pdf" frameborder="0" width="700px" height="650px">
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark ">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
 
     <!-- jQuery -->
-    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/jquery/jquery.min.js "></script>
     <!-- Bootstrap 4 -->
-    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js "></script>
     <!-- DataTables  & Plugins -->
-    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-    <script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-    <script src="plugins/jszip/jszip.min.js"></script>
-    <script src="plugins/pdfmake/pdfmake.min.js"></script>
-    <script src="plugins/pdfmake/vfs_fonts.js"></script>
-    <script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-    <script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
-    <script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script src="plugins/datatables/jquery.dataTables.min.js "></script>
+    <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js "></script>
+    <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js "></script>
+    <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js "></script>
+    <script src="plugins/datatables-buttons/js/dataTables.buttons.min.js "></script>
+    <script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js "></script>
+    <script src="plugins/jszip/jszip.min.js "></script>
+    <script src="plugins/pdfmake/pdfmake.min.js "></script>
+    <script src="plugins/pdfmake/vfs_fonts.js "></script>
+    <script src="plugins/datatables-buttons/js/buttons.html5.min.js "></script>
+    <script src="plugins/datatables-buttons/js/buttons.print.min.js "></script>
+    <script src="plugins/datatables-buttons/js/buttons.colVis.min.js "></script>
     <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.min.js"></script>
+    <script src="dist/js/adminlte.min.js "></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="dist/js/demo.js"></script>
+    <script src="dist/js/demo.js "></script>
     <!-- Page specific script -->
-    <script>
-        $(function() {
-            $("#example1").DataTable({
-                "responsive": true,
-                "lengthChange": false,
-                "autoWidth": false,
-                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-            $('#example2').DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": false,
-                "ordering": true,
-                "info": true,
-                "autoWidth": false,
-                "responsive": true,
-            });
-        });
-    </script>
+
 </body>
 
 </html>
