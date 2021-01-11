@@ -214,12 +214,37 @@
                             <td>15.000.000</td>
                         </tr>
                         <tr>
+                            <td>Tổng tiền đã trả</td>
+                            <td>15.000.000</td>
+                        </tr>
+                        <tr>
                             <td>Ngày đăng ký</td>
                             <td>20-11-2020</td>
                         </tr>
                         <tr>
+                            <td>Ngày hết hạn</td>
+                            <td>20-11-2020</td>
+                        </tr>
+                        <tr>
+                            <td>Ngày Đáo Hạn</td>
+                            <td>20-11-2020</td>
+                        </tr>
+                        <tr>
+                            <td>Trạng Thái</td>
+                            <td>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>Mã Bản Mô Tả</td>
+                            <td><a href="#">#1000</a></td>
+                        </tr>
+                        <tr>
                             <td>Mã Khách Hàng</td>
-                            <td>#1000</td>
+                            <td><a href="#">#1000</a></td>
+                        </tr>
+                        <tr>
+                            <td>View PDF</td>
+                            <td><button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#viewPdf">View PDF</button></td>
+
                         </tr>
 
                     </tbody>
@@ -292,24 +317,40 @@
 
                 </table>
                 <button type="button" class="btn btn-success">Gửi Ngay</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#tamNgung">Tạm Ngưng</button>
             </div>
             <!-- /.content -->
-            <div class="modal fade " id="myModal " role="dialog ">
-                <div class="modal-dialog ">
+            <div class="modal modal-danger fade in" id="tamNgung">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
 
-                    <!-- Modal content-->
+                        </div>
+                        <div class="modal-body">
+                            <p>Tạm ngưng hợp đồng này</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline">Gửi</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+        </div>
 
-
+        <div class="modal fade" id="viewPdf" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="card card-primary">
+                            <embed src="bang-khai-bao-thong-tin-ve-ben-thu-ba.pdf" frameborder="0" width="700px" height="650px">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- /.content-wrapper -->
-        <footer class="main-footer ">
-            <div class="float-right d-none d-sm-block ">
-                <b>Version</b> 3.1.0-rc
-            </div>
-            <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io ">AdminLTE.io</a>.</strong> All rights reserved.
-        </footer>
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark ">

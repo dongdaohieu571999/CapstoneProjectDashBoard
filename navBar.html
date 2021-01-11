@@ -71,13 +71,7 @@
         <li class="nav-item" id="customerList">
             <a href="danhsachkhachhang.html" class="nav-link">
                 <i class="nav-icon fas fa-table"></i>
-                <p>Danh Sách Khách Hàng</p>
-            </a>
-        </li>
-        <li class="nav-item" id="potentialCustomerList">
-            <a href="khachhangtiemnang.html" class="nav-link">
-                <i class="nav-icon fas fa-table"></i>
-                <p>Danh Sách Khách Hàng Tiềm Năng</p>
+                <p>Danh Sách KHTN</p>
             </a>
         </li>
         <li class="nav-item" id="yourContract">
@@ -100,7 +94,7 @@
         </li>
 
         <li class="nav-item" id="insurancePackage">
-            <a href="cacgoibaohiem_chitiet.html" class="nav-link">
+            <a href="danhsachbanminhhoa.html" class="nav-link">
                 <i class="nav-icon fas fa-table"></i>
                 <p>Các Gói Bảo Hiểm</p>
             </a>
@@ -116,6 +110,12 @@
             <a href="chungchi.html" class="nav-link">
                 <i class="nav-icon fa fa-graduation-cap"></i>
                 <p>Chứng Chỉ</p>
+            </a>
+        </li>
+        <li class="nav-item" id="notiAndChatbox">
+            <a href="notification.html" class="nav-link">
+                <i class="nav-icon fa fa-bell"></i>
+                <p>Thông Báo</p>
             </a>
         </li>
         <!-- saler -->
@@ -237,7 +237,6 @@
             $("#report").hide();
             $("#hisBenefits").hide();
             $("#benefits").hide();
-
             $("#salerManager").hide();
             $("#CustomerManager").hide();
             $("#feedback").hide();
@@ -268,6 +267,7 @@
             $("#partner").hide();
             $("#notiControl").hide();
             $("#contractControl").hide();
+            $("#notiAndChatbox").hide();
         } else if (localStorage.getItem("param") === "admin") {
             $("#review").hide();
             $("#salerList").hide();
@@ -286,6 +286,7 @@
             $("#document").hide();
             $("#certificate").hide();
             $("#passchange").hide();
+            $("#notiAndChatbox").hide();
         }
     } else {
         localStorage.setItem("param", urlParams.get('x'));
@@ -329,6 +330,7 @@
             $("#partner").hide();
             $("#notiControl").hide();
             $("#contractControl").hide();
+            $("#notiAndChatbox").hide();
         } else if (localStorage.getItem("param") === "admin") {
             $("#review").hide();
             $("#salerList").hide();
@@ -347,6 +349,7 @@
             $("#passchange").hide();
             $("#document").hide();
             $("#certificate").hide();
+            $("#notiAndChatbox").hide();
         }
     }
 </script>
