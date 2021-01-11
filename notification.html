@@ -17,7 +17,8 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -43,8 +44,8 @@
                     <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
                     <div class="input-group-append">
                         <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
+                            <i class="fas fa-search"></i>
+                        </button>
                     </div>
                 </div>
             </form>
@@ -94,159 +95,247 @@
             <section class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-3 chatCollumn">
-                            <nav class="mt-2">
-                                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                                    <!-- saler -->
-                                    <li class="chatItem">
-                                        <a href="#" class="dropdown-item">
-                                            <!-- Message Start -->
-                                            <div class="media">
-                                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-                                                <div class="media-body">
-                                                    <h3 class="dropdown-item-title">
-                                                        Hiếu
-                                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                                                    </h3>
-                                                    <p class="text-sm">Thông Báo Tư Vấn</p>
-                                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 2 minutes Ago</p>
+                        <div class="col-12">
+                            <div class="card card-primary card-outline">
+                                <div class="card-header">
+                                    <h3 class="card-title">Thông Báo Tư Vấn</h3>
+                                    <div class="card-tools">
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control" placeholder="Tìm Kiếm Thông Báo">
+                                            <div class="input-group-append">
+                                                <div class="btn btn-primary">
+                                                    <i class="fas fa-search"></i>
                                                 </div>
                                             </div>
-                                            <!-- Message End -->
-                                        </a>
-                                    </li>
-                                    <li class="chatItem">
-                                        <a href="#" class="dropdown-item">
-                                            <!-- Message Start -->
-                                            <div class="media">
-                                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-                                                <div class="media-body">
-                                                    <h3 class="dropdown-item-title">
-                                                        Hiếu
-                                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                                                    </h3>
-                                                    <p class="text-sm">Thông Báo Tư Vấn</p>
-                                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 2 minutes Ago</p>
-                                                </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.card-tools -->
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body p-0">
+                                    <div class="mailbox-controls">
+                                        <!-- Check all button -->
+                                        <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i
+                                                class="far fa-square"></i>
+                                        </button>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default btn-sm">
+                                                <i class="far fa-trash-alt"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-default btn-sm">
+                                                <i class="fas fa-reply"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-default btn-sm">
+                                                <i class="fas fa-share"></i>
+                                            </button>
+                                        </div>
+                                        <!-- /.btn-group -->
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </button>
+                                        <div class="float-right">
+                                            1-50/200
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default btn-sm">
+                                                    <i class="fas fa-chevron-left"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-default btn-sm">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                </button>
                                             </div>
-                                            <!-- Message End -->
-                                        </a>
-                                    </li>
-                                    <li class="chatItem">
-                                        <a href="#" class="dropdown-item">
-                                            <!-- Message Start -->
-                                            <div class="media">
-                                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-                                                <div class="media-body">
-                                                    <h3 class="dropdown-item-title">
-                                                        Hiếu
-                                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                                                    </h3>
-                                                    <p class="text-sm">Thông Báo Tư Vấn</p>
-                                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 2 minutes Ago</p>
-                                                </div>
+                                            <!-- /.btn-group -->
+                                        </div>
+                                        <!-- /.float-right -->
+                                    </div>
+                                    <div class="table-responsive mailbox-messages">
+                                        <table class="table table-hover table-striped">
+                                            <tbody>
+                                                <tr class="notiRow">
+                                                    <td class="mailbox-name"><a href="read-mail.html">Nguyễn Văn A</a>
+                                                    </td>
+                                                    <td class="mailbox-subject"><b>Mình Cần Tư Vấn</b></td>
+                                                    <td class="mailbox-date">5 mins ago</td>
+                                                    <td><button type="button" class="btn btn-block btn-success btn-flat" onclick="confirm('accpet')">
+                                                            <ion-icon name="checkmark-outline"></ion-icon>
+                                                        </button></td>
+                                                    <td><button type="button" class="btn btn-block btn-danger btn-flat" onclick="confirm('decline')">
+                                                            <ion-icon name="close-outline"></ion-icon>
+                                                        </button></td>
+                                                </tr>
+                                                <tr class="notiRow">
+                                                    <td class="mailbox-name"><a href="read-mail.html">Phạm Thị B</a>
+                                                    </td>
+                                                    <td class="mailbox-subject"><b>Alo</b></td>
+                                                    <td class="mailbox-date">28 mins ago</td>
+                                                    <td><button type="button" class="btn btn-block btn-success btn-flat" onclick="confirm('accpet')">
+                                                        <ion-icon name="checkmark-outline"></ion-icon>
+                                                    </button></td>
+                                                    <td><button type="button" class="btn btn-block btn-danger btn-flat" onclick="confirm('decline')">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </button></td>
+                                                </tr>
+                                                <tr class="notiRow">
+                                                    <td class="mailbox-name"><a href="read-mail.html">Trần Đức C</a>
+                                                    </td>
+                                                    <td class="mailbox-subject"><b>Mình Cần Tư Vấn</b></td>
+                                                    <td class="mailbox-date">11 hours ago</td>
+                                                    <td><button type="button" class="btn btn-block btn-success btn-flat" onclick="confirm('accpet')">
+                                                        <ion-icon name="checkmark-outline"></ion-icon>
+                                                    </button></td>
+                                                    <td><button type="button" class="btn btn-block btn-danger btn-flat" onclick="confirm('decline')">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </button></td>
+                                                </tr>
+                                                <tr class="notiRow">
+                                                    <td class="mailbox-name"><a href="read-mail.html">Hồ Kiều D</a></td>
+                                                    <td class="mailbox-subject"><b>Alo</b></td>
+                                                    <td class="mailbox-date">15 hours ago</td>
+                                                    <td><button type="button" class="btn btn-block btn-success btn-flat" onclick="confirm('accpet')">
+                                                        <ion-icon name="checkmark-outline"></ion-icon>
+                                                    </button></td>
+                                                    <td><button type="button" class="btn btn-block btn-danger btn-flat" onclick="confirm('decline')">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </button></td>
+                                                </tr>
+                                                <tr class="notiRow">
+                                                    <td class="mailbox-name"><a href="read-mail.html">Vũ Văn E</a></td>
+                                                    <td class="mailbox-subject"><b>Mình Cần Tư Vấn</b></td>
+                                                    <td class="mailbox-date">Yesterday</td>
+                                                    <td><button type="button" class="btn btn-block btn-success btn-flat" onclick="confirm('accpet')">
+                                                        <ion-icon name="checkmark-outline"></ion-icon>
+                                                    </button></td>
+                                                    <td><button type="button" class="btn btn-block btn-danger btn-flat" onclick="confirm('decline')">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </button></td>
+                                                </tr>
+                                                <tr class="notiRow">
+                                                    <td class="mailbox-name"><a href="read-mail.html">Nguyễn Văn F</a>
+                                                    </td>
+                                                    <td class="mailbox-subject"><b>Alo</b></td>
+                                                    <td class="mailbox-date">2 days ago</td>
+                                                    <td><button type="button" class="btn btn-block btn-success btn-flat" onclick="confirm('accpet')">
+                                                        <ion-icon name="checkmark-outline"></ion-icon>
+                                                    </button></td>
+                                                    <td><button type="button" class="btn btn-block btn-danger btn-flat" onclick="confirm('decline')">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </button></td>
+                                                </tr>
+                                                <tr class="notiRow">
+                                                    <td class="mailbox-name"><a href="read-mail.html">Đỗ Mạnh G</a></td>
+                                                    <td class="mailbox-subject"><b>Mình Cần Tư Vấn</b></td>
+                                                    <td class="mailbox-date">2 days ago</td>
+                                                    <td><button type="button" class="btn btn-block btn-success btn-flat" onclick="confirm('accpet')">
+                                                        <ion-icon name="checkmark-outline"></ion-icon>
+                                                    </button></td>
+                                                    <td><button type="button" class="btn btn-block btn-danger btn-flat" onclick="confirm('decline')">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </button></td>
+                                                </tr>
+                                                <tr class="notiRow">
+                                                    <td class="mailbox-name"><a href="read-mail.html">Trần Tú H</a></td>
+                                                    <td class="mailbox-subject"><b>Alo</b></td>
+                                                    <td class="mailbox-date">2 days ago</td>
+                                                    <td><button type="button" class="btn btn-block btn-success btn-flat" onclick="confirm('accpet')">
+                                                        <ion-icon name="checkmark-outline"></ion-icon>
+                                                    </button></td>
+                                                    <td><button type="button" class="btn btn-block btn-danger btn-flat" onclick="confirm('decline')">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- /.table -->
+                                    </div>
+                                    <!-- /.mail-box-messages -->
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer p-0">
+                                    <div class="mailbox-controls">
+                                        <div class="float-right">
+                                            1-50/200
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default btn-sm">
+                                                    <i class="fas fa-chevron-left"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-default btn-sm">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                </button>
                                             </div>
-                                            <!-- Message End -->
-                                        </a>
-                                    </li>
-                                    <li class="chatItem">
-                                        <a href="#" class="dropdown-item">
-                                            <!-- Message Start -->
-                                            <div class="media">
-                                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-                                                <div class="media-body">
-                                                    <h3 class="dropdown-item-title">
-                                                        Hiếu
-                                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                                                    </h3>
-                                                    <p class="text-sm">Thông Báo Tư Vấn</p>
-                                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 2 minutes Ago</p>
-                                                </div>
-                                            </div>
-                                            <!-- Message End -->
-                                        </a>
-                                    </li>
-                                    <li class="chatItem">
-                                        <a href="#" class="dropdown-item">
-                                            <!-- Message Start -->
-                                            <div class="media">
-                                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-                                                <div class="media-body">
-                                                    <h3 class="dropdown-item-title">
-                                                        Hiếu
-                                                        <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                                                    </h3>
-                                                    <p class="text-sm">tư vấn bảo hiểm</p>
-                                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 2 minutes Ago</p>
-                                                </div>
-                                            </div>
-                                            <!-- Message End -->
-                                        </a>
-                                    </li>
-                                    <li class="chatItem">
-                                        <a href="#" class="dropdown-item">
-                                            <!-- Message Start -->
-                                            <div class="media">
-                                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-                                                <div class="media-body">
-                                                    <h3 class="dropdown-item-title">
-                                                        Hiếu
-                                                        <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                                                    </h3>
-                                                    <p class="text-sm">Bạn ơi mình cần tư vấn</p>
-                                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 2 minutes Ago</p>
-                                                </div>
-                                            </div>
-                                            <!-- Message End -->
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="col-9">
+                                            <!-- /.btn-group -->
+                                        </div>
+                                        <!-- /.float-right -->
+                                    </div>
+                                </div>
+                            </div>
                             <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Lịch Sử Tư Vấn</h3>
+                                </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <div class="col-lg-12 col-6">
-                                        <!-- small box -->
-                                        <div class="small-box bg-warning">
-                                            <div class="inner">
-                                                <h3>#2000</h3>
-                                                <p>Tin Nhắn Hiện Ở đây</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="ion ion-chatbox"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-6">
-                                        <!-- small box -->
-                                        <div class="small-box bg-danger">
-                                            <div class="inner">
-                                                <h3>#2000</h3>
-                                                <p>Thông Báo Yêu Cầu Tư Vấn</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="ion ion-help"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-6">
-                                        <!-- small box -->
-                                        <div class="small-box bg-danger">
-                                            <div class="inner">
-                                                <h3>#2000</h3>
-                                                <p>Thông Báo Yêu Cầu Tư Vấn</p>
-                                            </div>
-                                            <div class="icon">
-                                                <i class="ion ion-help"></i>
+                                    <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <table id="example1" class="table table-bordered table-striped dataTable no-footer dtr-inline" role="grid" aria-describedby="example1_info">
+                                                    <thead>
+                                                        <tr role="row">
+                                                            <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending">
+                                                                Tên Khách Hàng</th>
+                                                            <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending">
+                                                                Ngày Nhận</th>
+                                                            <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending">
+                                                                Thời Gian Tư Vấn</th>
+                                                            <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending">
+                                                                Chi Tiết</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr role="row" class="odd">
+                                                            <td>Nguyễn Văn A</td>
+                                                            <td>13/12/2020</td>
+                                                            <td>30:00</td>
+                                                            <td><a href="#">Chi Tiết</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Nguyễn Văn B</td>
+                                                            <td>12/01/2021</td>
+                                                            <td>24:03</td>
+                                                            <td><a href="#">Chi Tiết</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Nguyễn Văn C</td>
+                                                            <td>12/01/2021</td>
+                                                            <td>24:03</td>
+                                                            <td><a href="#">Chi Tiết</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Nguyễn Văn D</td>
+                                                            <td>12/01/2021</td>
+                                                            <td>14:02</td>
+                                                            <td><a href="#">Chi Tiết</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Nguyễn Văn F</td>
+                                                            <td>12/01/2021</td>
+                                                            <td>13:03</td>
+                                                            <td><a href="#">Chi Tiết</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- /.card-body -->
                             </div>
-                            <!-- /.card -->
                         </div>
                         <!-- /.col -->
                     </div>
@@ -267,14 +356,16 @@
     background: white;
     right: 22px;
     position: fixed;
-    bottom: 20px;">
+    bottom: 20px;
+    display: none;">
             <div class="box-header">
 
                 <div class="box-tools pull-right" style="
     text-align: right;
 ">
 
-                    <button class="btn btn-box-tool" id="fa-minus" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    <button class="btn btn-box-tool" id="fa-minus" data-widget="collapse"><i
+                            class="fa fa-minus"></i></button>
 
                     <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                 </div>
@@ -322,7 +413,8 @@
                     <form action="#" method="post">
                         <div class="input-group">
                             <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                            <span class="input-group-btn"><button type="button" class="btn btn-info btn-flat">Send</button></span>
+                            <span class="input-group-btn"><button type="button"
+                                    class="btn btn-info btn-flat">Send</button></span>
                         </div>
                     </form>
                 </div>
@@ -372,6 +464,16 @@
                 "responsive": true,
             });
         });
+
+        function confirm(params) {
+            if (params === 'accept') {
+                confirm("Xác nhận nhận tư vấn khách hàng?");
+                break;
+            } else {
+                confirm("Xác nhận từ chối tư vấn khách hàng?");
+                break;
+            }
+        }
     </script>
 </body>
 
