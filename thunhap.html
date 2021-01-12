@@ -31,116 +31,7 @@
                 </li>
             </ul>
 
-            <!-- SEARCH FORM -->
-            <form class="form-inline ml-3">
-                <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-                    <div class="input-group-append">
-                        <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-                    </div>
-                </div>
-            </form>
 
-            <!-- Right navbar links -->
-            <ul class="navbar-nav ml-auto">
-                <!-- Messages Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#">
-                        <i class="far fa-comments"></i>
-                        <span class="badge badge-danger navbar-badge">3</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
-                            <div class="media">
-                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-                                <div class="media-body">
-                                    <h3 class="dropdown-item-title">
-                                        Brad Diesel
-                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                                    </h3>
-                                    <p class="text-sm">Call me whenever you can...</p>
-                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                                </div>
-                            </div>
-                            <!-- Message End -->
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
-                            <div class="media">
-                                <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                                <div class="media-body">
-                                    <h3 class="dropdown-item-title">
-                                        John Pierce
-                                        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                                    </h3>
-                                    <p class="text-sm">I got your message bro</p>
-                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                                </div>
-                            </div>
-                            <!-- Message End -->
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
-                            <div class="media">
-                                <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                                <div class="media-body">
-                                    <h3 class="dropdown-item-title">
-                                        Nora Silvester
-                                        <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                                    </h3>
-                                    <p class="text-sm">The subject goes here</p>
-                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                                </div>
-                            </div>
-                            <!-- Message End -->
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-                    </div>
-                </li>
-                <!-- Notifications Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#">
-                        <i class="far fa-bell"></i>
-                        <span class="badge badge-warning navbar-badge">15</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <span class="dropdown-item dropdown-header">15 Notifications</span>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-envelope mr-2"></i> 4 new messages
-                            <span class="float-right text-muted text-sm">3 mins</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-users mr-2"></i> 8 friend requests
-                            <span class="float-right text-muted text-sm">12 hours</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-file mr-2"></i> 3 new reports
-                            <span class="float-right text-muted text-sm">2 days</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-                        <i class="fas fa-expand-arrows-alt"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-                        <i class="fas fa-th-large"></i>
-                    </a>
-                </li>
-            </ul>
         </nav>
         <!-- /.navbar -->
 
@@ -352,86 +243,80 @@
                                         <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
                                     </div>
                                 </div>
-                                <!-- /.card-body -->
                             </div>
-                            <!-- /.card -->
 
-                            <!-- STACKED BAR CHART -->
-                            <div class="card card-success">
+                            <div class="card">
                                 <div class="card-header">
-                                    <h3 class="card-title">Tổng Thu Nhập Năm</h3>
-
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                                        <button type="button" class="btn btn-tool" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart">
-                                        <canvas id="stackedBarChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-                                    </div>
-                                </div>
-                                <!-- /.card-body -->
-                            </div>
-                            <!-- /.card -->
-                            <div class="card bg-gradient-info">
-                                <div class="card-header border-0 ui-sortable-handle" style="cursor: move;">
-                                    <h3 class="card-title">
-                                        <i class="fas fa-th mr-1"></i> Doanh Thu
-                                    </h3>
-
-                                    <div class="card-tools">
-                                        <button type="button" class="btn bg-info btn-sm" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                                        <button type="button" class="btn bg-info btn-sm" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                                    </div>
-                                </div>
-                                <div class="card-body" style="display: block;">
-                                    <div class="chartjs-size-monitor">
-                                        <div class="chartjs-size-monitor-expand">
-                                            <div class=""></div>
-                                        </div>
-                                        <div class="chartjs-size-monitor-shrink">
-                                            <div class=""></div>
+                                    <h3 class="card-title">Thu Nhập Theo Hợp Đồng</h3>
+                                    <div class="row" style="float: right;">
+                                        <div class="card" style="padding: 10px;
+                                        background: #28a745; color: white;">
+                                            <div>
+                                                <label>Search:<input id="Rsearch" type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1"></label>
+                                                <label>From<input id="RfromSearch" type="date" class="form-control form-control-sm" placeholder="" aria-controls="example1"></label>
+                                                <label>To<input id="RtoSearch" type="date" class="form-control form-control-sm" placeholder="" aria-controls="example1"></label>
+                                                <button id="RdelBtn" type="button" class="btn btn-danger">XÓA</button>
+                                                <button type="button" class="btn btn-info">Tìm Kiếm</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <canvas class="chart chartjs-render-monitor" id="line-chart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%; display: block; width: 278px;" width="556" height="500"></canvas>
                                 </div>
-                                <!-- /.card-body -->
-                                <div class="card-footer bg-transparent" style="display: block;">
-                                    <div class="row">
-                                        <div class="col-4 text-center">
-                                            <div style="display:inline;width:60px;height:60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly"
-                                                    style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; background: none; font: bold 12px Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; appearance: none;"></div>
-
-                                            <div class="text-white">Qua Saler</div>
-                                        </div>
-                                        <!-- ./col -->
-                                        <div class="col-4 text-center">
-                                            <div style="display:inline;width:60px;height:60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly"
-                                                    style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; background: none; font: bold 12px Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; appearance: none;"></div>
-
-                                            <div class="text-white">Qua Ngân Hàng</div>
-                                        </div>
-                                        <!-- ./col -->
-                                        <div class="col-4 text-center">
-                                            <div style="display:inline;width:60px;height:60px;"><canvas width="120" height="120" style="width: 60px; height: 60px;"></canvas><input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly"
-                                                    style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; background: none; font: bold 12px Arial; text-align: center; color: rgb(57, 204, 204); padding: 0px; appearance: none;"></div>
-
-                                            <div class="text-white">Trực Tiếp Với Đại Lý</div>
-                                        </div>
-                                        <!-- ./col -->
-                                    </div>
-                                    <!-- /.row -->
+                                <div class="card-body" style="height: 1200px; overflow: auto;">
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Mã Hợp Đồng</th>
+                                                <th>Thu Nhập</th>
+                                                <th>Doanh Thu</th>
+                                                <th>Thời Gian</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="#">#109384JHBMNB</a></td>
+                                                <td>2.000.000 đ</td>
+                                                <td>300.000.000</td>
+                                                <td>20/11/2021 8:30 SA</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">#109384JHBMNB</a></td>
+                                                <td>2.000.000 đ</td>
+                                                <td>300.000.000</td>
+                                                <td>20/11/2021 8:30 SA</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">#109384JHBMNB</a></td>
+                                                <td>2.000.000 đ</td>
+                                                <td>300.000.000</td>
+                                                <td>20/11/2021 8:30 SA</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">#109384JHBMNB</a></td>
+                                                <td>2.000.000 đ</td>
+                                                <td>300.000.000</td>
+                                                <td>20/11/2021 8:30 SA</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">#109384JHBMNB</a></td>
+                                                <td>2.000.000 đ</td>
+                                                <td>300.000.000</td>
+                                                <td>20/11/2021 8:30 SA</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">#109384JHBMNB</a></td>
+                                                <td>2.000.000 đ</td>
+                                                <td>300.000.000</td>
+                                                <td>20/11/2021 8:30 SA</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">#109384JHBMNB</a></td>
+                                                <td>2.000.000 đ</td>
+                                                <td>300.000.000</td>
+                                                <td>20/11/2021 8:30 SA</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <!-- /.card-footer -->
                             </div>
                         </div>
                         <!-- /.col (RIGHT) -->
@@ -442,13 +327,6 @@
             </section>
             <!-- /.content -->
         </div>
-        <!-- /.content-wrapper -->
-        <footer class="main-footer">
-            <div class="float-right d-none d-sm-block">
-                <b>Version</b> 3.1.0-rc
-            </div>
-            <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-        </footer>
 
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
@@ -469,16 +347,11 @@
     <!-- Page specific script -->
     <script>
         $(function() {
-            /* ChartJS
-             * -------
-             * Here we will create a few charts using ChartJS
-             */
-
-            //--------------
-            //- AREA CHART -
-            //--------------
-
-            // Get context with jQuery - using jQuery's .get() method.
+            $('#RdelBtn').click(function() {
+                $('#Rsearch').val('');
+                $('#RfromSearch').val('');
+                $('#RtoSearch').val('');
+            });
             var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
 
             var areaChartData = {
@@ -548,11 +421,6 @@
                 data: lineChartData,
                 options: lineChartOptions
             })
-
-            //-------------
-            //- DONUT CHART -
-            //-------------
-            // Get context with jQuery - using jQuery's .get() method.
             var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
             var donutData = {
                 labels: [
@@ -618,91 +486,6 @@
                 type: 'bar',
                 data: barChartData,
                 options: barChartOptions
-            })
-
-            //---------------------
-            //- STACKED BAR CHART -
-            //---------------------
-            var stackedBarChartCanvas = $('#stackedBarChart').get(0).getContext('2d')
-            var stackedBarChartData = $.extend(true, {}, barChartData)
-
-            var stackedBarChartOptions = {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    xAxes: [{
-                        stacked: true,
-                    }],
-                    yAxes: [{
-                        stacked: true
-                    }]
-                }
-            }
-
-            var stackedBarChart = new Chart(stackedBarChartCanvas, {
-                type: 'bar',
-                data: stackedBarChartData,
-                options: stackedBarChartOptions
-            })
-
-            // Sales graph chart
-            var salesGraphChartCanvas = $('#line-chart').get(0).getContext('2d')
-                // $('#revenue-chart').get(0).getContext('2d');
-
-            var salesGraphChartData = {
-                labels: ['2011 Q1', '2011 Q2', '2011 Q3', '2011 Q4', '2012 Q1', '2012 Q2', '2012 Q3', '2012 Q4', '2013 Q1', '2013 Q2'],
-                datasets: [{
-                    label: 'Digital Goods',
-                    fill: false,
-                    borderWidth: 2,
-                    lineTension: 0,
-                    spanGaps: true,
-                    borderColor: '#efefef',
-                    pointRadius: 3,
-                    pointHoverRadius: 7,
-                    pointColor: '#efefef',
-                    pointBackgroundColor: '#efefef',
-                    data: [2666, 2778, 4912, 3767, 6810, 5670, 4820, 15073, 10687, 8432]
-                }]
-            }
-
-            var salesGraphChartOptions = {
-                maintainAspectRatio: false,
-                responsive: true,
-                legend: {
-                    display: false
-                },
-                scales: {
-                    xAxes: [{
-                        ticks: {
-                            fontColor: '#efefef'
-                        },
-                        gridLines: {
-                            display: false,
-                            color: '#efefef',
-                            drawBorder: false
-                        }
-                    }],
-                    yAxes: [{
-                        ticks: {
-                            stepSize: 5000,
-                            fontColor: '#efefef'
-                        },
-                        gridLines: {
-                            display: true,
-                            color: '#efefef',
-                            drawBorder: false
-                        }
-                    }]
-                }
-            }
-
-            // This will get the first returned node in the jQuery collection.
-            // eslint-disable-next-line no-unused-vars
-            var salesGraphChart = new Chart(salesGraphChartCanvas, {
-                type: 'line',
-                data: salesGraphChartData,
-                options: salesGraphChartOptions
             })
         })
     </script>

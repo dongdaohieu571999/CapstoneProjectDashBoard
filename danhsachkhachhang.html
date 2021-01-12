@@ -35,17 +35,7 @@
                 </li>
             </ul>
 
-            <!-- SEARCH FORM -->
-            <form class="form-inline ml-3">
-                <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-                    <div class="input-group-append">
-                        <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-                    </div>
-                </div>
-            </form>
+
         </nav>
         <!-- /.navbar -->
 
@@ -96,9 +86,22 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3 class="card-title">Dưới đây là danh sách các Khách Hàng</h3>
+                                    <div class="row" style="float: right;">
+                                        <div class="card" style="padding: 10px;
+                                        background: #28a745; color: white;">
+                                            <div>
+                                                <label>Search:<input id="Rsearch" type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1"></label>
+                                                <label>From<input id="RfromSearch" type="date" class="form-control form-control-sm" placeholder="" aria-controls="example1"></label>
+                                                <label>To<input id="RtoSearch" type="date" class="form-control form-control-sm" placeholder="" aria-controls="example1"></label>
+                                                <button id="RdelBtn" type="button" class="btn btn-danger">XÓA</button>
+                                                <button type="button" class="btn btn-info">Tìm Kiếm</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
+
                                     <table id="example1" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
@@ -177,6 +180,14 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Họ Tên</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Mã Hợp Đồng</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Mã Bản Minh Họa</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
                                         </div>
                                         <div class="form-group">
@@ -398,17 +409,10 @@
                 "responsive": true,
                 "lengthChange": false,
                 "autoWidth": false,
+                "searching": false,
                 "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
             }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-            $('#example2').DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": false,
-                "ordering": true,
-                "info": true,
-                "autoWidth": false,
-                "responsive": true,
-            });
+
         });
     </script>
 </body>
