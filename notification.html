@@ -267,6 +267,57 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Khách Hàng Đang Tư Vấn</h3>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <table id="example1" class="table table-bordered table-striped dataTable no-footer dtr-inline" role="grid" aria-describedby="example1_info">
+                                                    <thead>
+                                                        <tr role="row">
+                                                            <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending">
+                                                                Tên Khách Hàng</th>
+                                                            <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending">
+                                                                Thao Tác</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr role="row" class="odd">
+                                                            <td>Nguyễn Văn A</td>
+                                                            <td><button type="button" class="btn btn-block btn-primary btn-flat">
+                                                                <ion-icon name="arrow-undo-outline"></ion-icon>
+                                                            </button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Nguyễn Văn B</td>
+                                                            <td><button type="button" class="btn btn-block btn-primary btn-flat">
+                                                                <ion-icon name="arrow-undo-outline"></ion-icon>
+                                                            </button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Nguyễn Văn C</td>
+                                                            <td><button type="button" class="btn btn-block btn-primary btn-flat">
+                                                                <ion-icon name="arrow-undo-outline"></ion-icon>
+                                                            </button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+
                             <div class="card">
                                 <div class="card-header">
                                     <h3 class="card-title">Lịch Sử Tư Vấn</h3>
@@ -348,7 +399,7 @@
         </div>
 
 
-        <div class="box box-info box-solid direct-chat direct-chat-info" style="
+        <div id="messageBox" class="box box-info box-solid direct-chat direct-chat-info" style="
     height: 490px;
     border-radius: 10px;
     border: 1px solid peru;
@@ -468,6 +519,7 @@
         function confirm(params) {
             if (params === 'accept') {
                 confirm("Xác nhận nhận tư vấn khách hàng?");
+                document.getElementById('messageBox').style.display = 'block';
                 break;
             } else {
                 confirm("Xác nhận từ chối tư vấn khách hàng?");
